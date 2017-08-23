@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import superagent from 'superagent';
 
-const API_URL = 'http://www.reddit.com/r';
+const API_URL = 'https://www.reddit.com/r';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class App extends React.Component {
     });
   }
   render() {
-    return (  
+    return (
       <div>
         <h1>Reddit Search Engine</h1>
         <SearchForm topics = {this.topics} />
